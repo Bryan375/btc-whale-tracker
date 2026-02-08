@@ -6,9 +6,10 @@ import (
 	"log"
 	"time"
 
-	"github.com/Bryan375/btc-whale-tracker/internal/entity"
 	"github.com/gorilla/websocket"
 	"github.com/shopspring/decimal"
+
+	"github.com/Bryan375/btc-whale-tracker/internal/entity"
 )
 
 const (

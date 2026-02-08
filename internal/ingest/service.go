@@ -3,8 +3,9 @@ package ingest
 import (
 	"log"
 
-	"github.com/Bryan375/btc-whale-tracker/internal/entity"
 	"github.com/shopspring/decimal"
+
+	"github.com/Bryan375/btc-whale-tracker/internal/entity"
 )
 
 type Service struct {
