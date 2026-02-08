@@ -1,4 +1,4 @@
-.PHONY: lint fmt check test run install-hooks
+.PHONY: lint fmt check test run
 
 fmt:
 	@echo "🔧 Formatting code..."
@@ -14,11 +14,3 @@ check: fmt lint
 
 run:
 	@go run cmd/main.go
-
-install-hooks:
-	@echo "📦 Installing git hooks..."
-	@echo '#!/bin/sh\nmake check' > .git/hooks/pre-commit
-	@chmod +x .git/hooks/pre-commit
-	@echo '#!/bin/sh\nmake test' > .git/hooks/pre-push
-	@chmod +x .git/hooks/pre-push
-	@echo "✅ Git hooks installed!"
